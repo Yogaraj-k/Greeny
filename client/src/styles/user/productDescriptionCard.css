@@ -1,0 +1,225 @@
+.product-description-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow: auto;
+  height: 50%;
+}
+.model-container .modal-header {
+  text-decoration: none;
+  padding-top: 5px;
+  padding-bottom: 0px;
+  border: none;
+}
+.model-body {
+  padding: 10px 1rem;
+}
+.model-container .modal-footer {
+  text-decoration: none;
+  padding-bottom: 5px;
+  padding-top: 0px;
+  border: none;
+}
+.model-container .modal-footer .green-background-button {
+  background-color: #119744;
+}
+
+.description-image {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-right: 20px;
+  width: 450px;
+}
+
+.description-image span {
+  position: absolute;
+}
+.discount-label {
+  background-color: red;
+}
+.new-label-des {
+  text-align: left;
+  display: block;
+  background-color: #119744;
+  width: 50px;
+  padding: 0px 10px;
+  color: #fff;
+  border-radius: 3px;
+  font-size: 14px;
+  top: 32px;
+}
+.description-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.des-product-name {
+  font-size: 30px;
+  margin: 8px 0;
+  text-align: left;
+  font-weight: 600;
+  color: black;
+  padding-bottom: 15px;
+}
+.des-product-name p {
+  color: #555;
+  font-weight: 100;
+  font-size: 14px;
+  margin-right: 3px;
+  padding-top: 10px;
+}
+.des-product-name p span {
+  margin-left: 10px;
+}
+.des-product-rating {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.des-product-rating svg {
+  color: #f8d828;
+  margin-right: 3px;
+  font-size: 18px;
+}
+.des-product-rating p {
+  color: #555;
+  font-size: 16px;
+}
+.des-product-price {
+  font-size: 18px;
+  color: #555;
+  text-align: left;
+  padding-bottom: 25px;
+  font-weight: bold;
+}
+.des-product-price .oldPrice {
+  color: red;
+  padding-right: 15px;
+  text-decoration: line-through;
+}
+.des-product-price .newPrice {
+  color: #119744;
+}
+
+.des-product {
+  line-height: 25px;
+  text-align: justify;
+  padding-bottom: 30px;
+  font-size: 15px;
+}
+.des-add-to-cart-icon span,
+.des-add-to-like-icon span {
+  padding-left: 10px;
+}
+.des-add-to-cart-icon {
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  background-color: #119744;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 18px;
+  width: 90%;
+  margin-bottom: 20px;
+}
+.des-add-to-cart-icon .shop-icon {
+  color: #ffffff;
+  height: auto;
+}
+
+.des-add-to-like-icon {
+  display: flex;
+  justify-content: center;
+  color: #555;
+  background-color: #cccc;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 90%;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.des-add-to-like-icon .like {
+  color: #555;
+  height: auto;
+}
+.close-button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #119744;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  height: 40px;
+  width: 80px;
+  text-align: center;
+}
+
+.description-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.description-thumbnails {
+  margin-top: 10px;
+  width: 350px;
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.slick-slide {
+  border: 2px solid transparent;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.item {
+  border-color: red;
+}
+.description-thumbnails img {
+  width: 100%;
+  height: auto;
+}
+@media (width: 1000px) {
+  .product-description-card {
+    width: 90%;
+  }
+  .description-image {
+    width: 100%;
+  }
+}
+@media (min-width: 820px) and (max-width: 1100px) {
+  .product-description-card {
+    width: 90%;
+  }
+  .description-image {
+    width: 350px;
+    margin-right: 20px;
+  }
+  .description-image img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 990px) {
+  .product-description-card {
+    display: flex;
+    flex-direction: column;
+  }
+  .description-image {
+    width: 100%;
+  }
+  .description-thumbnails {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+}

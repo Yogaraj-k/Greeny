@@ -1,0 +1,137 @@
+.offers-section {
+	position: relative;
+	width: 100%;
+	background-color: #f3f4f6;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.offers-banner {
+	position: relative;
+	width: 100%;
+	height: 300px;
+	overflow: hidden;
+	background-color: #00000078;
+}
+
+.offers-banner:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(to right, #1197447a, #00317b7a);
+	z-index: 1;
+}
+
+.offers-banner img {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: 0;
+}
+
+.offer-banner-content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #ffffff;
+	text-align: center;
+	z-index: 2;
+}
+
+.offers-banner-anchors {
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	color: #ffffff;
+	text-align: center;
+	z-index: 2;
+}
+
+.offers-banner-anchors a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.offer-cards {
+	width: 90%;
+	padding: 2%;
+}
+
+.offers-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.offer-card {
+	width: calc(25% - 20px); /* Adjust width for four columns with gap */
+	margin-right: 20px; /* Adjust the gap between cards */
+	margin-bottom: 20px; /* Add space between rows */
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px #8080809a;
+}
+
+.offer-card:last-child {
+	margin-right: 0;
+}
+
+.offer-card img {
+	width: 100%;
+	height: auto;
+	border-radius: 10px 10px 0 0;
+	object-fit: cover;
+}
+
+.offer-details {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 0 0 10px 10px;
+	height: auto;
+	padding: 0 6%;
+}
+
+.offer-info {
+	border-radius: 10px;
+	padding: 10px;
+	display: flex;
+	justify-content: center;
+}
+
+.offer-title {
+	color: #0000009a;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.offer-link {
+	font-size: 18px;
+	color: #009f7f;
+	text-decoration: none;
+	font-weight: light;
+	border: 0;
+	background-color: #f3f4f6;
+}
+
+@media screen and (max-width: 840px) {
+	.offers-banner {
+		width: fit-content;
+	}
+	.offer-title,
+	.offer-link {
+		font-size: 60%;
+	}
+	.offer-cards {
+		padding-top: 10%;
+	}
+	.offer-card {
+		width: calc(48% - 20px);
+	}
+}

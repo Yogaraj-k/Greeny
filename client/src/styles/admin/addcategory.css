@@ -1,0 +1,136 @@
+.add-category-form {
+	background-color: #f3f4f6;
+}
+.head {
+	color: #1f2937;
+	font-size: 250%;
+	font-weight: 500;
+	line-height: 3%;
+	border-bottom: 0.3vh #1f2937 dashed;
+	padding: 3rem 1%;
+}
+
+.left {
+	width: 30vw;
+	padding: 0 1%;
+}
+.right {
+	width: 70vw;
+	background-color: #fff;
+	padding: 0 1%;
+}
+.left h3 {
+	color: #4b5563;
+}
+.right p {
+	color: #6b7280;
+}
+.add-image {
+	display: flex;
+	padding: 1%;
+	border-bottom: 0.3vh #1f2937 dashed;
+}
+.add-image .input-container {
+	display: flex;
+	height: 36vh;
+	align-items: center;
+	justify-content: center;
+	border-radius: 1.5vh;
+}
+.image-input {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 90%;
+	width: 100%;
+	border: 0.3vh #1f2937 dashed;
+	border-radius: 1.5vh;
+	text-align: center;
+}
+.image-input:hover {
+	border: 0.3vh #009f7f dashed;
+}
+
+.description {
+	display: flex;
+	padding: 1%;
+}
+.description-form {
+	padding: 1%;
+}
+.description .input-container {
+	border-radius: 1.5vh;
+	padding: 0.5% 2%;
+}
+
+.description .input-container .name,
+.details-text {
+	padding: 0.1rem 0;
+	width: 100%;
+}
+.name input {
+	padding: 1% 0;
+	width: 100%;
+	border-radius: 0.9vh;
+	border: 0.3vh #6b7280 solid;
+}
+
+.description-form label {
+	padding-right: 60%;
+	padding-bottom: 3%;
+}
+
+.details-text #select-icon,
+#select-type,
+#select-category {
+	padding: 1% 0;
+	width: 100%;
+	border-radius: 0.9vh;
+	border: 0.3vh #6b7280 solid;
+}
+.details-text textarea {
+	padding: 1% 0;
+	width: 100%;
+	border-radius: 0.9vh;
+	border: 0.3vh #6b7280 solid;
+	resize: vertical;
+}
+.add-category-button {
+	position: relative;
+	padding-left: 85%;
+}
+.add-category-btn {
+	width: 80%;
+	height: 8vh;
+	border: 0.1vh #009f7f solid;
+	border-radius: 0.3vw;
+	background-color: #009f7f;
+	color: #fff;
+}
+.add-category-button :hover {
+	background-color: #017a62;
+}
+
+@media screen and (max-width: 720px) {
+	.image-input {
+		width: 97%;
+	}
+	.add-category-btn {
+		width: 27vw;
+		height: 9vw;
+		border-radius: 5px;
+	}
+	.add-category-button {
+		position: relative;
+		padding-left: 69%;
+	}
+	.add-image,
+	.description {
+		display: block;
+	}
+	.left,
+	.right {
+		width: 95%;
+		height: auto;
+	}
+}

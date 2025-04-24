@@ -1,0 +1,13 @@
+.vendor {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 1% 5%;
+}
+
+.total-transactions h3,
+.successful-transactions h3,
+.failed-transactions h3,
+.pending-transactions h3 {
+	color: #119744;
+}

@@ -1,0 +1,56 @@
+.orderList-container {
+  text-align: center;
+  overflow: auto;
+  position: relative;
+  top: 70px;
+}
+.orderList-container.modelTable {
+  text-align: center;
+  overflow: auto;
+  position: relative;
+  top: 2px;
+}
+.content-shifted {
+  margin-left: 280px;
+  transition: margin-left 0.3s ease;
+}
+.orderList-table {
+  width: 93%;
+  border-collapse: collapse;
+  margin: 30px auto;
+}
+.orderList-table th {
+  background-color: #119744;
+  color: #ffffff;
+  padding: 15px;
+}
+.orderList-table td {
+  background-color: #ffffff;
+  padding: 5px 10px;
+}
+.orderList-table td img {
+  width: 100px;
+}
+
+.orderList-table th:first-child {
+  border-top-left-radius: 8px;
+  border: none;
+}
+.orderList-table th:last-child {
+  border-top-right-radius: 8px;
+  border: none;
+}
+.orderList-table th,
+.orderList-table td {
+  border: 1px solid #ccc;
+}
+.orderList-table .wishlist-card {
+  padding: 20px;
+}
+
+@media (max-width: 600px) {
+  .orderList-container {
+    text-align: center;
+    padding: 10px 10px;
+  }
+}

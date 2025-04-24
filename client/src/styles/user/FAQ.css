@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;900&display=swap");
+* {
+	font-family: "Rubik", sans-serif;
+	margin: 0;
+	
+}
+body {
+	background-color: #f5f6f7;
+}
+.faq-body-part {
+	margin-top: 10%;
+	width: 75%;
+	height: 100%;
+	margin-left: 13%;
+	
+}
+
+.faqback img {
+	width: 100%;
+	display: flex;
+	filter: brightness(50%);
+	-webkit-filter: brightness(50%);
+	object-fit: cover;
+}
+.faq-title {
+	top: 20%;
+	font-size: 50px;
+	color: #fff;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.offers-banner-anchors {
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	color: #ffffff;
+	text-align: center;
+	z-index: 2;
+}
+.ques-ans {
+	border-radius: 8px;
+	margin-bottom: 30px;
+	background: white;
+	border-left: 3px solid green;
+	border-right: 3px solid green;
+	-webkit-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.1);
+	box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.1);
+
+	-webkit-transition: all 2s ease;
+	-moz-transition: all 2s ease;
+	-ms-transition: all 2s ease;
+	-o-transition: all 2s ease;
+	transition: all 2s ease;
+}
+.ques-ans:hover .faq-ques button {
+	color: green;
+}
+
+.ques-ans:last-child {
+	margin-bottom: 0px;
+}
+.faq-ques button {
+	width: 100%;
+	border: none;
+	outline: none;
+	background: none;
+	text-align: left;
+	padding: 22px 25px;
+	font-size: 18px;
+	font-weight: 500;
+	-webkit-transition: all .25s ease;
+	-moz-transition: all .25s ease;
+	-ms-transition: all .25s ease;
+	-o-transition: all .25s ease;
+	transition: all .25s ease;
+}
+
+.faq-ans p {
+	font-size: 16px;
+	line-height: 26px;
+	padding: 20px 25px;
+	border-top: 1px solid lightgray;
+
+	
+}
+
+.faq-body-part .ques-ans:hover .faq-ans{
+	display: block;
+}
+.faq-ans {
+	&:not(.show) {
+		
+		display: none;
+		transition: height 1s;
+	}
+}

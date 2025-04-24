@@ -1,0 +1,109 @@
+
+.totalorder1 {
+    margin-top: 100px;
+    padding: 20px 25px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    /* background: #fff; */
+    /* border: 1px solid #e8e8e8; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+.order-selection1 {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.order-selection1 .form-label1 {
+    font-size: 18px;
+    margin: 0px 8px 0px 0px;
+    color: black;
+}
+
+.order-selection1 .select-history1 {
+    width: 100px;
+    background: #f5f5f5;
+}
+.select-history1{
+    height: 45px;
+    font-size: 15px;
+    padding: 0px 7px;
+    letter-spacing: 0.3px;
+    background-size: 12px 10px;
+    text-transform: capitalize;
+    cursor: pointer;
+    border-radius: 6px;
+    
+}
+.category-list {
+    
+    margin-top: 30px;
+    max-width: 100%;
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* gap: 2rem; */
+}
+.category-data {
+    margin: 10px 12px 10px 40px;
+    position: relative;
+    width: 100%;
+}
+.category-top {
+    margin-bottom: 15px;
+    width: 15%;
+}
+.category-top img{
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+}
+.category-top:hover .category-body {
+    transform: scale(1);
+}
+.category-body {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.4);
+    transform: scale(0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all linear .3s;
+}
+.category-body a{
+    text-decoration: none;
+    display: inline-block;
+}
+.category-body a {
+    width: 30%;
+    height: 30%;
+    line-height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    align-items: center;
+    color: #fff;
+    background: green;
+    transition: all linear .3s;
+}
+.category-body a:hover {
+    color: green;
+    background: #fff;
+    cursor: pointer;
+}
+@media (max-width: 840px) {
+    .allcategory-cont{
+        right: 0;
+    }
+    .category-data{
+        margin: 0;
+        align-items: center;
+    }
+}

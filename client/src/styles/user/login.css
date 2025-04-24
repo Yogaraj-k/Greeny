@@ -1,0 +1,111 @@
+.card-login {
+  background-color: white;
+  width: 70%;
+  height: 450px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.circle {
+  width: 40px;
+  height: 40px;
+  transform: translate(-50%, 323%);
+  border-radius: 50%;
+  background-color: #e8e8e8;
+  font-style: italic;
+}
+.circle p {
+  text-align: center;
+  background: none;
+  margin-top: 8px;
+  font-size: 17px;
+  color: #555555;
+}
+.resetHere {
+  margin-top: 15px;
+  background: none;
+}
+.resetHere p {
+  background: none;
+  color: #555555;
+  text-align: center;
+  font-size: calc(15px + (35 - 33) * (100vw - 320px) / (1920 - 320));
+}
+#link {
+  background: none;
+  color: #119744;
+  text-decoration: none;
+  margin-left: 3px;
+  align-items: left;
+}
+.verticalLine {
+  width: 2px;
+  height: 85%;
+  background-color: #e8e8e8;
+  margin-top: 5px;
+  margin-left: 2%;
+  margin-right: 3%;
+  display: flex;
+  flex-direction: column;
+}
+.circle {
+  width: 40px;
+  height: 40px;
+  transform: translate(-50%, 280%);
+  border-radius: 50%;
+  background-color: #e8e8e8;
+  font-style: italic;
+}
+.circle p {
+  text-align: center;
+  background: none;
+  margin-top: 7.5px;
+  font-size: 17px;
+  color: #555555;
+}
+@media (max-width: 1120px) {
+  .card-login {
+    width: 90%;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 850px) {
+  .card-login {
+    height: 100%;
+    width: 80%;
+    margin-bottom: 10px;
+  }
+  .verticalLine {
+    width: 90%;
+    height: 1px;
+    background-color: #ccc;
+    position: absolute;
+    top: 47%;
+    margin-left: 20px;
+    transform: translateY(-50%);
+    margin-top: 15px;
+  }
+
+  .circle {
+    display: none;
+  }
+}
+@media (max-width: 550px) {
+  .card-login {
+    width: 90%;
+  }
+  .Register-card-bottom {
+    width: 90%;
+  }
+  .circle {
+    display: none;
+  }
+  .verticalLine {
+    top: 47%;
+    margin-left: 20px;
+  }
+}

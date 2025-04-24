@@ -1,0 +1,156 @@
+.highlight {
+	background-image: linear-gradient(-135deg, rgba(17, 151, 68, 1), rgba(171, 151, 68, 0));
+	overflow: hidden;
+	position: relative;
+
+	transition: 0.3s;
+	border-radius: 12px;
+}
+
+.highlight:hover {
+	transition: 0.3s;
+	box-shadow: 3px 4px #a5ebc098;
+}
+
+#bgimg {
+	width: 1520px;
+	height: 680px;
+	opacity: 0.15;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -1;
+}
+
+.slide {
+	margin-bottom: 25px;
+	padding: 50px 0 60px 0;
+	margin: 0 12px;
+}
+
+.product {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+}
+
+#proimg {
+	width: 580px;
+	height: 520px;
+}
+
+#description {
+	padding-left: 5%;
+}
+
+#description h1 {
+	color: rgb(57, 64, 74);
+	font-size: 50px;
+	line-height: 58px;
+	vertical-align: baseline;
+	font-weight: 500;
+	text-decoration: none solid rgb(57, 64, 74);
+	letter-spacing: normal;
+	text-align: start;
+	font-style: normal;
+	font-variant: normal;
+	text-indent: 0px;
+	text-transform: none;
+	word-spacing: 0px;
+}
+
+#descripton p {
+	color: #555555;
+	font-size: 18px;
+	line-height: 28px;
+	vertical-align: baseline;
+	letter-spacing: normal;
+	word-spacing: 0px;
+	font-weight: 400;
+	font-style: normal;
+	font-variant: normal;
+	text-transform: none;
+	text-decoration: none solid rgb(85, 85, 85);
+	text-align: start;
+	text-indent: 0px;
+}
+
+#shop svg,
+#offer svg {
+	margin-right: 7px;
+}
+#shop,
+#offer {
+	width: 167px;
+	height: 53px;
+	border-radius: 6px;
+	text-align: center;
+	line-height: 22.5px;
+	font-size: 15px;
+	border: none;
+	margin-right: 15px;
+	margin-top: 10px;
+	padding: 14px 32px 14px 32px;
+	border: 0.6px solid #119744;
+}
+
+#shop {
+	color: #fff;
+	background-color: #119744;
+}
+
+#offer {
+	color: #119744;
+	background-color: #fff;
+}
+
+#shop:hover {
+	color: #119744;
+	background-color: #fff;
+}
+
+#offer:hover {
+	color: #fff;
+	background-color: #119744;
+}
+
+@media screen and (max-width: 1024px) and (orientation: portrait) {
+	.slide {
+		margin-bottom: 2.5px;
+		padding: 5px 0 6px 0;
+	}
+
+	#proimg {
+		display: none;
+	}
+
+	#description {
+		padding-left: 0;
+	}
+}
+
+@media screen and (max-width: 1080px) and (orientation: landscape) {
+	.slide {
+		margin-bottom: 10px;
+		padding: 5px 0 6px 0;
+		margin: 0 3px;
+	}
+
+	#proimg {
+		width: 290px;
+		height: 260px;
+	}
+
+	.food-details {
+		flex: 1;
+		text-transform: capitalize;
+		text-align: center;
+
+		overflow: hidden;
+		white-space: nowrap;
+		display: -webkit-box;
+		-webkit-line-clamp: 18;
+		-webkit-box-orient: vertical;
+	}
+}

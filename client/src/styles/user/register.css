@@ -1,0 +1,363 @@
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;900&display=swap");
+
+.Authentic-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #f3f4f5;
+  height: 100%;
+}
+
+.Authentic-logo {
+  width: 200px;
+  height: 50px;
+  margin: 1.5%;
+}
+
+.Register-card {
+  background-color: white;
+  width: 70%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Register-content {
+  margin-top: 10px;
+  text-align: center;
+  background: none;
+}
+
+.Register-content .Register-content-heading {
+  color: #119744;
+  margin-top: 3px;
+  font-size: 30px;
+  font-weight: 500;
+  background: none;
+}
+
+.Register-content-heading h2 {
+  background: none;
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: -0.3px;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.Register-content p {
+  margin-top: 5px;
+  font-size: calc(15px + (35 - 33) * (100vw - 320px) / (1920 - 320));
+  background: none;
+  color: #555555;
+}
+
+.Register-row {
+  display: flex;
+
+  flex-direction: row;
+  background: none;
+  justify-content: space-between;
+}
+
+.Register-icons {
+  width: 45%;
+  background: none;
+  flex-direction: column;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.socialBox {
+  background: none;
+  height: 50px;
+  width: 95%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 12px;
+  color: white;
+}
+
+.socialIcon {
+  background: none;
+  font-size: 20px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.socialBox#fb {
+  background-color: #3b5998;
+}
+
+.socialBox#tw {
+  background-color: #00acee;
+}
+
+.socialBox#gl {
+  background-color: #e60023;
+}
+
+.socialBox#ig {
+  background-color: #f77737;
+}
+
+.socialBox p {
+  background: none;
+  color: white;
+  font-variant: normal;
+  font-size: 17px;
+  margin-bottom: 0px;
+  text-transform: lowercase;
+}
+
+.verticalLine-register {
+  width: 2px;
+  height: 350px;
+  background-color: #e8e8e8;
+  margin-top: 5px;
+  margin-left: 3%;
+  margin-right: 3%;
+  display: flex;
+  flex-direction: column;
+}
+
+.Register-form {
+  width: 45%;
+  padding: 20px;
+  background: none;
+}
+
+.Register-form form {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.form_error {
+  margin-top: -10px;
+  margin-left: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-self: flex-start;
+  color: #e60023;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+#form_error_icon {
+  font-size: 12px;
+  /* margin-bottom: 4px; */
+}
+
+.Register-form input {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  padding: 13px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #f3f4f5;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.Register-form input:focus {
+  outline: none;
+  border-color: #119744;
+}
+
+.Register-form .terms {
+  background: none;
+  /* display: flex; */
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.spinner_overview {
+  height: 28px;
+}
+
+.spinner {
+  position: relative;
+}
+
+#spinner_d_flex {
+  position: absolute;
+  left: 45%;
+}
+
+.Register-form button {
+  background-color: #119744;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+#register_form_btn {
+  cursor: pointer;
+  background-color: #5aac79e3;
+}
+
+/* Style the checkbox */
+.Register-form input[type="checkbox"] {
+  margin-right: 10px;
+  height: 15px;
+  width: 15px;
+  accent-color: #119744;
+}
+
+.Register-form label {
+  background: none;
+  margin-bottom: 20px;
+  color: #555555;
+  display: inline;
+  font-size: calc(15px + (35 - 33) * (100vw - 320px) / (1920 - 320));
+}
+.header-terms a {
+  background: none;
+  color: #00acee;
+  text-decoration: none;
+  font-size: calc(15px + (35 - 33) * (100vw - 320px) / (1920 - 320));
+}
+
+.Register-card-bottom {
+  background-color: white;
+  width: 70%;
+  height: 70px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 1.5%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5%;
+}
+
+.Register-card-bottom .bottom-content {
+  background: none;
+  margin: 5px;
+  text-align: center;
+}
+
+.Register-card-bottom .bottom-content p {
+  text-align: center;
+  background: none;
+  font-size: calc(15px + (35 - 33) * (100vw - 320px) / (1920 - 320));
+  color: #555555;
+}
+
+.Authenticfooter p {
+  color: #555555;
+}
+
+.Authenticfooter p span {
+  color: #119744;
+}
+
+@media (max-width: 1120px) {
+  .Register-card {
+    height: 100%;
+    width: 90%;
+    margin-bottom: 10px;
+  }
+
+  .Register-card-bottom {
+    background-color: white;
+    width: 90%;
+    height: auto;
+  }
+}
+
+@media (max-width: 850px) {
+  .Register-card {
+    height: 100%;
+    width: 80%;
+    margin-bottom: 10px;
+  }
+
+  .Register-row {
+    flex-direction: column;
+    position: relative;
+  }
+
+  .Register-icons {
+    width: 100%;
+  }
+
+  .verticalLine-register {
+    width: 90%;
+    height: 1px;
+    background-color: #ccc;
+    position: absolute;
+    top: 40.5%;
+    transform: translateY(-50%);
+    margin-top: 15px;
+  }
+
+  .Register-form {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .Register-card-bottom {
+    background-color: white;
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 1.5%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+  }
+
+  .Register-card-bottom .content p {
+    font-size: 14px;
+    text-align: center;
+    margin: 1px;
+  }
+
+  .footer {
+    margin-bottom: 5%;
+  }
+
+  .circle-register {
+    display: none;
+  }
+}
+
+.circle-register {
+  width: 40px;
+  height: 40px;
+  transform: translate(-50%, 400%);
+  border-radius: 50%;
+  background-color: #e8e8e8;
+  font-style: italic;
+}
+
+.circle-register p {
+  text-align: center;
+  background: none;
+  margin-top: 7px;
+  font-size: 17px;
+  color: #555555;
+}
+
+@media (max-width: 550px) {
+  .Register-card {
+    width: 90%;
+  }
+}
